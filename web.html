@@ -1,0 +1,307 @@
+<!--        Made with 💖 by AlpaCa
+/////////////////////////////////////////////
+//                                         //
+//                                         //
+//    +   +                                //
+//   +++ +++                               //
+//  +++++++++                              //
+//    +++++            /\                 ///
+//     +++            /  \               / //
+//      +            /    \             /  //
+//                  /      \           /   //
+//                 /        \_________/    //
+//                /                        //
+//               /       \         /       //
+//              /       __\       /__      //
+//             /                           //
+//            /             ____           //
+//           /              \  /           //
+//          /     _~_        \/    _~_     //
+//         /     /  /             |   |    //
+//        /     /  /              |   |    //
+//       /     /  /               |   |    //
+/////////////////////////////////////////////
+-->
+<!-- 待解决：留言板拖动条 移动动画 js有时失灵-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Index of AlpaCa</title>
+    <!-- 图标 -->
+	<link rel="shortcut icon" href="images/head_img.ico">
+    <!-- css js -->
+    <!-- 留言板 -->
+    <script src="board.js"></script>   
+    <link rel="stylesheet" href="board_table.css">
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js"></script>
+</head>
+<!-- <body onload="init();"> -->
+<body>
+<video muted autoplay loop="loop" style="width: 100%" class="vedio">
+    <!-- 待解决，使body的background在vedio之后加载 -->
+    <!-- 待解决，vedio一段时间后会自动停止播放 -->
+    <source src="images/back_vedio1.mp4" type="video/mp4">
+</video>
+
+<div class="box" >
+
+    <div class="left" id="left_button">
+        <img src="temp/left1.png" alt="">
+    </div>
+    
+    <div class="sum_window">
+        <div class="sum_container" id="sum_container">
+            <div class="container">
+                
+                <div class="pic">
+                    <img src="images/pic.png" alt="">
+                </div>
+
+                <div class="ID" >
+                    <span id="ID">AlpaCa</span>
+                </div>
+
+                <div class="setence">
+                    <span id="sentence">May all the beauty be blessed.</span>
+                </div>
+
+                <div class="link">
+                    <div class="blog">
+                        <a href="https://www.cnblogs.com/Al-Ca/"><img src="images/blog.png" alt="" ></a>
+                    </div>
+                    <div class="oj marginleft">
+                        <a href="https://accoding.cn/user/46655/index"><img src="images/oj.png" alt="" ></a>
+                    </div>
+                    <div class="bilibili marginleft">
+                        <a href="https://space.bilibili.com/511504250"><img src="images/bilibili.png" alt="" ></a>
+                    </div>
+                    <div class="github marginleft">
+                        <a href="https://github.com/AlpaCac"><img src="images/github.png" alt="" ></a>
+                    </div>
+                    <div class="mys marginleft">
+                        <a href="https://bbs.mihoyo.com/dby/accountCenter/postList?id=79739355"><img src="images/mys (2).png" alt="" ></a>
+                    </div>
+                    
+                </div>
+                <div class="oneword">
+                    <div class="oneword_container" id="oneword_container">
+
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">所谓无底深渊，下去，也是前程万里。</span>
+                            <span class="text3">——《素履之往》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">就像一把生锈的锁，一个惜物的人往锁孔里滴一些油后，配套的钥匙，就能轻而易举地把锁打开。</span>
+                            <span class="text3">——《少年如豆》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">没有人能夺走你的梦想，除非你自己放弃。</span>
+                            <span class="text3">—— It Takes Two</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">我们沉浮于世、不断挣扎，只不过是为了过风平浪静的生活。 </span>
+                            <span class="text3">——维多利亚·希斯洛普《岛》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">意义非凡的事情总是碰巧发生的。只有不重要的事才有周全的计划。</span>
+                            <span class="text3">——珍妮特·温特森 《时间之间》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">和你想的不一样的叫生活，和你想的一样的叫童话。</span>
+                            <span class="text3">——《马男波杰克》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">没有人能回到过去重新活过，但你我都可以从现在开始，决定我们未来的模样。</span>
+                            <span class="text3">——卢思浩</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">终此一生，只有两种方法：要么梦见生活，要么落地生活。</span>
+                            <span class="text3">——勒内·夏尔</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">无论人生上到哪一层台阶，总有人在仰望你，总有人俯视你。你抬头自卑，低头自得，唯有平视，才能看见真实的自己。</span>
+                            <span class="text3">——杨绛</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">前半生，我们步履不停，走了很多路；后半生，历尽千帆，只求有乡可依，有家可回。</span>
+                            <span class="text3">——《愿你前半生有路可走，后半生有家可回》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">成长就是：渐渐温柔，克制，朴素，不怨不问不记，安静中渐渐体会生命盛大。</span>
+                            <span class="text3">——沈奇岚《那个姐姐教我们的事》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">他们说人生有六个字，前面三个是，不害怕，后面三个是，不后悔，努力去做吧。</span>
+                            <span class="text3">——董卿</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">向日葵告诉我，只要面对着阳光努力向上，日子就会变得单纯而美好。</span>
+                            <span class="text3">——《少年如豆》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">就像一把生锈的锁，一个惜物的人往锁孔里滴一些油后，配套的钥匙，就能轻而易举地把锁打开。</span>
+                            <span class="text3">——几米《又寂寞又美好》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">人是有惰性的动物，一旦过多地沉湎于温柔之乡，就更削弱了重新投入风暴的勇气和力量。</span>
+                            <span class="text3">——路遥《早晨从中午开始》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">大劫大难之后人不该失去锐气，不该失去热度，你镇定了但仍在燃烧，你平稳了却更加坦荡。</span>
+                            <span class="text3">——史铁生《好运设计》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">Dark for the sunrise/Clouds for a blue sky/Space for the travelling star.</span>
+                            <span class="text3">——We'll Meet Again</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">All you need to know is that we're holding on/Even if we fall we will rise up.</span>
+                            <span class="text3">——Rise Up</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">我看到过很多年轻人胳膊被炸断,腿被截肢，但都不及丑陋的灵魂可怕，因为灵魂是没有义肢。</span>
+                            <span class="text3">——scent of a woman</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">所谓无底深渊，下去，也是前程万里。</span>
+                            <span class="text3">——《素履之往》</span>
+                        </div>
+                        <div class="word">
+                            <span class="text1"><img src="images/oneword.png" alt=""> <span>一言（ヒトコト）</span></span>
+                            <span class="text2">就像一把生锈的锁，一个惜物的人往锁孔里滴一些油后，配套的钥匙，就能轻而易举地把锁打开。</span>
+                            <span class="text3">——《少年如豆》</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container_link">
+                <table class="table_link">
+                    <tr>
+                        <!-- <p id="youlian">友链</p> -->
+                        <span id="youlian">友链_HZOI</span>
+                    </tr>
+                    <tr>
+                        <a href="https://www.cnblogs.com/kalginamiemeng/" class="trlink">miemeng</a>
+                        <a href="https://www.cnblogs.com/OI-zzyy/" class="trlink">zzyy</a>
+                        <a href="https://www.cnblogs.com/yxsplayxs/" class="trlink">yxs</a>
+                        <a href="https://www.cnblogs.com/three-D/" class="trlink">three_D</a>
+                        <a href="https://www.cnblogs.com/casun547/" class="trlink">casun547</a>
+                        <a href="https://www.cnblogs.com/hz-Rockstar/" class="trlink">hz_Rockstar</a>
+                        <a href="https://www.cnblogs.com/hzjuruo/" class="trlink">X&R</a>
+                    </tr>
+                    <tr>
+                        <a href="https://www.cnblogs.com/hzoi-lsc/" class="trlink">lsc</a>
+                        <a href="https://www.cnblogs.com/Duan-Yue/" class="trlink">DuanYue</a>
+                        <a href="https://www.cnblogs.com/skyh/" class="trlink">skyh</a>
+                        <a href="https://www.cnblogs.com/heoitys/" class="trlink">Lockey_T</a>
+                        <a href="https://www.cnblogs.com/2018hzoicyf/" class="trlink">bootpuss</a>
+                        <a href="https://www.cnblogs.com/znsbc-13/" class="trlink">znsbc</a>
+                        <a href="https://www.cnblogs.com/wwb123/" class="trlink">Wwb_star</a>
+                    </tr>
+                    <tr>
+                        <a href="https://www.cnblogs.com/remarkable/" class="trlink">remarkable</a>
+                        <a href="https://www.cnblogs.com/ooovooo/" class="trlink">ooo</a>
+                        <a href="https://www.cnblogs.com/hhhhhhhxxxxxxx/" class="trlink">hzoi_secret</a>
+                        <a href="https://www.cnblogs.com/loadingkkk/" class="trlink">loadingkkk</a>
+                        <a href="https://www.cnblogs.com/Lrefrain/" class="trlink">Lrefrain</a>
+                        <a href="https://www.cnblogs.com/Milk-Feng/" class="trlink">Milk_Feng</a>
+                        <a href="https://www.cnblogs.com/MouDing/" class="trlink">MouDing</a>
+                    </tr>
+                    <tr>
+                        <a href="https://www.cnblogs.com/starsing/" class="trlink">starsing</a>
+                        <a href="https://www.cnblogs.com/wang-hesong/" class="trlink">Hzoi_whs</a>
+                        <a href="https://www.cnblogs.com/hzoi2018-xuefeng/" class="trlink">xuefeng</a>
+                        <a href="https://www.cnblogs.com/bilibiliSmily/" class="trlink">Smily</a>
+                        <a href="https://www.cnblogs.com/Juve" class="trlink">hzoi_xkl</a>
+                        <a href="https://www.cnblogs.com/leom10/" class="trlink">Barca</a>
+                        <a href="https://www.cnblogs.com/mikufun-hzoi-cpp/" class="trlink">mikufun</a>
+                    </tr>
+                    <tr>
+                        <a href="https://www.cnblogs.com/Rorschach-XR" class="trlink">Rorschach_XR</a>
+                        <a href="https://www.cnblogs.com/hzoi-DeepinC" class="trlink">DeepinC</a>
+                        <a href="https://www.cnblogs.com/hzoi-yzh/" class="trlink">HZOI_yzh</a>
+                        <a href="https://www.cnblogs.com/My-tiantian" class="trlink">Porsche</a>
+                        <a href="https://www.cnblogs.com/LH-Xuanluo" class="trlink">_LH</a>
+                        <a href="https://www.cnblogs.com/AthosD/" class="trlink">Dybala</a>
+                        <a href="https://www.cnblogs.com/Yu-shi/" class="trlink">Yu_shi</a>
+                    </tr>
+                    <tr>
+                        <a href="https://www.cnblogs.com/Hzoi-lyl/" class="trlink">Hzoi_lyl</a>
+                        <a href="https://www.cnblogs.com/toot-wjh/" class="trlink">toot</a>
+                        <a href="" class="trlink"></a>
+                        <a href="" class="trlink"></a>
+                        <a href="" class="trlink"></a>
+                        <a href="" class="trlink"></a>
+                        <a href="" class="trlink"></a>
+                    </tr>
+                </table>
+            </div>
+            <div class="container_board">
+
+                <table class="table_top">
+                    <tr>
+                        <td>姓名</td>
+                        <td><input type="text" id="name"/></td>
+                    </tr>
+                    <tr>
+                        <td>留言</td>
+                        <td><input type="text" id="memo"/></td>
+                    </tr>
+                    <tr>
+                       <td colspan="2"> <input type="button" value="保存" id="bc" onclick="saveData();"/></td>
+                    </tr>
+                </table>
+                <hr/>
+                <div class="board_bottom">
+                    <table id="datatable" border="1">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right" id="right_button">
+        <img src="temp/right3.png" alt="">
+    </div>
+
+</div>
+<div class="footer">
+    <div class="container_bottom">
+        <span id="foot">Powered by AlpaCa/BUAA</span>
+    </div>
+</div>
+
+<!-- 爱心特效 -->
+<script src="heart.js"></script>
+<!-- 音乐播放器(需要自动播放添加data-autoplay="true"到id="aplayer")-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.0/dist/APlayer.min.css">
+<script src="https://blog-static.cnblogs.com/files/yjlaugus/APlayer.min.js"></script>
+<div id="aplayer" class="aplayer"  data-id="5182818333" data-server="netease" data-type="playlist" data-fixed="true" data-listfolded="true" data-order="random" data-theme="#F58EA8" ></div>
+<script src="https://unpkg.com/meting@1.2/dist/Meting.min.js"></script>
+</body>
+</html>
